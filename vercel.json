@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "barbershop/app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "barbershop/app.py"
+    }
+  ]
+}
